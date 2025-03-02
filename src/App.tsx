@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import EntryComponent from './types/Entry'
-import { finland2025 } from './data/2025'
+import { Entry } from './types'
+import { estonia2025, finland2025 } from './data/2025'
+import PrintEntry from './types/Entry'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
+    <h2>Comparing:</h2>
+    <EntryComponent entry={finland2025} />
+    <EntryComponent entry={estonia2025} />
+    </>
     /* <>
       <div>
         <a href="https://vite.dev" target="_blank">
@@ -31,7 +36,6 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </> */
-    EntryComponent({entry: finland2025})
   )
 }
 
