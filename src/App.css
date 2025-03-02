@@ -6,6 +6,10 @@
   /* align-items: center; */
 }
 
+img {
+  width: 40%;
+}
+
 .comparison {
   display: flex;
   justify-content: space-between;

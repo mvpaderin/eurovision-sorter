@@ -1,4 +1,5 @@
 import Country from "../types/Country";
+import flagFinland from '../flags/finland.png'
 
 export const estonia: Country = {
     name: 'Estonia',
@@ -7,5 +8,5 @@ export const estonia: Country = {
 
 export const finland: Country = {
     name: 'Finland',
-    flag: 'flagOfFinland'
+    flag: flagFinland
   };

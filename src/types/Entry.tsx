@@ -16,6 +16,7 @@ const EntryComponent: React.FC<Props> = ({ entry }) => {
   const entryName = `${entry.artist} - ${entry.title}`;
   return (
     <div>
+      <img src={entry.country.flag}></img>
       <h1>{entry.country.name}</h1>
       <p>{entryName}</p>
     </div>
